@@ -2,7 +2,9 @@
 layout: page
 ---
 
-<p class="home-container">{{ content }}</p>
+<div class="home-container">
+	{{ content }}
+<div>
 {%- if site.posts.size > 0 -%}
 <ul class="posts">
 	{%- for post in site.posts -%}
