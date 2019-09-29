@@ -101,6 +101,14 @@ footer {
 	clear: both;
 }
 
+.flex-container {
+	display: flex;
+}
+
+.home-container {
+	flex-direction: row;
+}
+
 //
 // Basic Container Class
 //
