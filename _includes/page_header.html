@@ -1,15 +1,24 @@
+<head>
+	<script src="https://kit.fontawesome.com/6c4ef72e27.js"></script>
+</head>
 <div class="header-container">
 	<h1>{{ site.texture.title }}</h1>
 	<h2>{{ site.texture.tagline }}</h2>
 	<ul class="social">
 		{%- if site.texture.social_links.github -%}
-			<a href="https://github.com/{{ site.texture.social_links.github }}"><li><i class="icon-github-circled"></i></li></a>
+			<a href="https://github.com/{{ site.texture.social_links.github }}"><li><i class="fab fa-github"></i></li></a>
+		{%- endif -%}
+		{%- if site.texture.social_links.keybase -%}
+			<a href="https://keybase.io/{{ site.texture.social_links.keybase }}"><li><i class="fab fa-keybase"></i></li></a>
 		{%- endif -%}
 		{%- if site.texture.social_links.linkedIn -%}
-			<a href="https://linkedin.com/{{ site.texture.social_links.linkedIn }}"><li><i class="icon-linkedin-squared"></i></li></a>
+			<a href="https://linkedin.com/{{ site.texture.social_links.linkedIn }}"><li><i class="fab fa-linkedin"></i></li></a>
 		{%- endif -%}
 		{%- if site.texture.social_links.twitter -%}
-			<a href="https://twitter.com/{{ site.texture.social_links.twitter }}"><li><i class="icon-twitter-squared"></i></li></a>
+			<a href="https://twitter.com/{{ site.texture.social_links.twitter }}"><li><i class="fab fa-twitter"></i></li></a>
+		{%- endif -%}
+		{%- if site.texture.social_links.pubkey -%}
+			<a href="{{ site.texture.social_links.pubkey }}"><li><i class="fas fa-key"></i></li></a>
 		{%- endif -%}
 	</ul>
 </div>
